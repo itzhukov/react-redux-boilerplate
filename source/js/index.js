@@ -29,5 +29,6 @@ ReactDOM.render(
         <Route path='*' component={ NotFound } />
       </Route>
     </Router>
+
   </Provider>, document.getElementById('root')
 );
