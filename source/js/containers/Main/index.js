@@ -36,7 +36,7 @@ export default class Main extends Component {
           {isFetching && 'isFetching!'}
         </div>
 
-        <button onClick={ actions.fetchingStart.bind(this) }>Fetch</button>
+        <button disabled={isFetching && 'disabled!'} onClick={ actions.fetchingStart.bind(this) }>Fetch</button>
       </div>
     );
   }

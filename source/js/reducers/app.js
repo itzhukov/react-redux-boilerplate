@@ -11,20 +11,20 @@ export default function app(previousState = initialState, action = {}) {
     case ActionTypes.TEST_ACTION:
       const counter = previousState.get('counter') + action.payload;
       return previousState.merge({
-      counter
-      });
+               counter
+             });
       break;
 
     case ActionTypes.FETCHING_PROGRESS:
       return previousState.merge({
-      isFetching: true
-      });
+               isFetching: true
+             });
       break;
 
     case ActionTypes.FETCHING_SUCCESS:
       return previousState.merge({
-      isFetching: false
-      });
+               isFetching: false
+             });
       break;
 
     default:
